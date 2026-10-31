@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>og-template</title>
+  <!-- Source of assets/og.png (1200x630). Re-render with headless Chrome after edits. -->
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      width: 1200px; height: 630px; overflow: hidden;
+      display: grid; align-content: center; gap: 22px; padding: 0 90px;
+      background:
+        radial-gradient(70% 90% at 85% 0%, rgb(47 129 247 / 38%), transparent 65%),
+        radial-gradient(50% 70% at 0% 100%, rgb(163 113 247 / 22%), transparent 70%),
+        #0d1117;
+      color: #e6edf3;
+      font-family: ui-sans-serif, system-ui, "Segoe UI", Arial, sans-serif;
+    }
+    .pill {
+      width: fit-content; padding: 8px 20px; border-radius: 999px;
+      border: 1px solid rgb(63 185 80 / 55%); background: rgb(63 185 80 / 15%);
+      color: #3fb950; font-size: 24px; font-weight: 600;
+    }
+    h1 {
+      font-size: 148px; line-height: 1; letter-spacing: -6px;
+      background: linear-gradient(100deg, #58a6ff, #a371f7);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .role { font: 600 38px ui-monospace, "Cascadia Code", Consolas, monospace; color: #58a6ff; }
+    .meta { font-size: 28px; color: #9198a1; }
+    .url { position: absolute; right: 90px; bottom: 56px; font: 28px ui-monospace, Consolas, monospace; color: #9198a1; }
+  </style>
+</head>
+<body>
+  <div class="pill">Open to internship / junior</div>
+  <h1>NuIIX</h1>
+  <div class="role">ML Engineer · AI Developer · Python</div>
+  <div class="meta">Transformers · Anomaly detection · FastAPI — Novosibirsk, UTC+7</div>
+  <div class="url">nuiix.github.io</div>
+</body>
+</html>

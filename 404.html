@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — страница не найдена | NuIIX</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var theme = "dark";
+      try {
+        theme = localStorage.getItem("nuiix-theme") ||
+          (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      } catch (error) {
+        console.warn("Theme preference unavailable, using dark:", error);
+      }
+      root.dataset.theme = theme;
+      root.classList.add("js");
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="NuIIX — на главную"><span class="brand__dot" aria-hidden="true"></span>NuIIX</a>
+    </div>
+  </header>
+  <main id="main" class="container not-found">
+    <div>
+      <p class="not-found__code" aria-hidden="true">404</p>
+      <h1 class="section__title" style="margin-top: var(--space-4)">Страница не найдена</h1>
+      <p class="section__lead">Такой страницы нет или она переехала. / This page does not exist or has moved.</p>
+      <div class="btn-row" style="justify-content: center; margin-top: var(--space-5)">
+        <a class="btn btn--primary" href="/">На главную</a>
+        <a class="btn" href="/en/">English version</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

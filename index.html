@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NuIIX — ML Engineer / AI Developer | Максим, Новосибирск</title>
+  <meta name="description" content="Портфолио Максима (NuIIX): ML Engineer, AI Developer, Python. Transformer-модели, детекция аномалий в API-трафике, плагин для Obsidian. Ищу стажировку или junior-позицию.">
+  <meta name="author" content="NuIIX">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://nuiix.github.io/">
+  <link rel="alternate" hreflang="ru" href="https://nuiix.github.io/">
+  <link rel="alternate" hreflang="en" href="https://nuiix.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://nuiix.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NuIIX">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="NuIIX — ML Engineer / AI Developer">
+  <meta property="og:description" content="Transformer-модели, детекция аномалий в API-трафике, ML-сервисы на FastAPI. Ищу стажировку или junior-позицию.">
+  <meta property="og:url" content="https://nuiix.github.io/">
+  <meta property="og:image" content="https://nuiix.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NuIIX — ML Engineer, AI Developer, Python">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NuIIX — ML Engineer / AI Developer">
+  <meta name="twitter:description" content="Transformer-модели, детекция аномалий в API-трафике, ML-сервисы на FastAPI.">
+  <meta name="twitter:image" content="https://nuiix.github.io/assets/og.png">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var theme = "dark";
+      try {
+        theme = localStorage.getItem("nuiix-theme") ||
+          (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      } catch (error) {
+        console.warn("Theme preference unavailable, using dark:", error);
+      }
+      root.dataset.theme = theme;
+      root.classList.add("js");
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Максим",
+    "alternateName": "NuIIX",
+    "url": "https://nuiix.github.io/",
+    "image": "https://nuiix.github.io/assets/og.png",
+    "jobTitle": "ML Engineer / AI Developer",
+    "description": "Студент 4 курса СибГУТИ, занимается машинным обучением и разработкой на Python.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Новосибирск", "addressCountry": "RU" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "СибГУТИ" },
+    "knowsAbout": ["Machine Learning", "Deep Learning", "Python", "Transformers", "FastAPI", "Anomaly detection"],
+    "sameAs": ["https://github.com/NuIIX", "https://t.me/NUIIXXX"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="NuIIX — на главную"><span class="brand__dot" aria-hidden="true"></span>NuIIX</a>
+
+      <nav class="nav" id="site-nav" data-nav aria-label="Основная навигация">
+        <a class="nav__link" href="#about">Обо мне</a>
+        <a class="nav__link" href="#projects">Проекты</a>
+        <a class="nav__link" href="#journey">Хронология</a>
+        <a class="nav__link" href="#stack">Стек</a>
+        <a class="nav__link" href="#contact">Контакты</a>
+      </nav>
+
+      <div class="header-tools">
+        <a class="lang-link" href="/en/" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Переключить тему оформления">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span>Открыт к стажировке / junior-позиции</p>
+        <h1 class="hero__title" id="hero-title">Привет, я <span class="gradient">NuIIX</span></h1>
+        <p class="hero__role">ML Engineer · AI Developer · Data Scientist<span class="cursor" aria-hidden="true"></span></p>
+        <p class="hero__lead">
+          Меня зовут <strong>Максим</strong>. Я студент 4 курса СибГУТИ и занимаюсь машинным обучением на Python:
+          от подготовки данных и обучения моделей до упаковки их в работающий сервис.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#projects">Смотреть проекты</a>
+          <a class="btn" href="https://github.com/NuIIX" rel="me noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="https://t.me/NUIIXXX" rel="me noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 3.6 2.7 11c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8l3.2-15.1c.3-1.3-.5-1.9-1.3-1.5zM8.5 13.5l9.9-6.2c.5-.3.9-.1.5.2l-8.1 7.3-.3 3.4z"/></svg>
+            Telegram
+          </a>
+        </div>
+        <ul class="facts">
+          <li class="facts__item"><span class="facts__label">Образование</span><span class="facts__value">СибГУТИ · выпуск 2027</span></li>
+          <li class="facts__item"><span class="facts__label">Сертификат</span><span class="facts__value">Samsung Innovation Campus</span></li>
+          <li class="facts__item"><span class="facts__label">Локация</span><span class="facts__value">Новосибирск · UTC+7</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 / Обо мне</span>
+          <h2 class="section__title" id="about-title">От данных до работающего сервиса</h2>
+          <p class="section__lead">Мне интересно не только обучить модель, но и довести её до состояния, в котором ею можно пользоваться.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Занимаюсь <strong>машинным обучением и разработкой на Python</strong>: готовлю данные, обучаю модели, проверяю их без утечек и оборачиваю в сервисы на FastAPI.</p>
+            <p>Сейчас ищу <strong>стажировку или junior-позицию</strong> по направлениям ML Engineer, AI Developer и Data Scientist. Параллельно веду дипломную работу и делаю мобильное приложение на Flutter.</p>
+            <div>
+              <ul class="tags">
+                <li class="tag tag--accent">Transformer-модели</li>
+                <li class="tag tag--accent">Градиентный бустинг</li>
+                <li class="tag tag--accent">Временные ряды</li>
+                <li class="tag tag--accent">Explainable AI</li>
+                <li class="tag">FastAPI</li>
+                <li class="tag">Docker и CI/CD</li>
+                <li class="tag">Безопасность API</li>
+              </ul>
+            </div>
+          </div>
+          <dl class="dl reveal">
+            <div class="dl__row"><dt>Образование</dt><dd>СибГУТИ · 09.03.01 «Информатика и вычислительная техника» · выпуск 2027</dd></div>
+            <div class="dl__row"><dt>Сертификация</dt><dd>Samsung Innovation Campus — «Искусственный интеллект и ML» (с отличием, 2026)</dd></div>
+            <div class="dl__row"><dt>Фокус</dt><dd>ML-проекты, дипломная работа, мобильное приложение на Flutter</dd></div>
+            <div class="dl__row"><dt>Развитие</dt><dd>ML/DL, backend, Kubernetes</dd></div>
+            <div class="dl__row"><dt>Локация</dt><dd>Новосибирск · UTC+7</dd></div>
+          </dl>
+        </div>
+
+        <div class="grid grid--2" style="margin-top: var(--space-6)">
+          <article class="card reveal">
+            <h3 class="card__title">Machine Learning</h3>
+            <p class="card__text">Transformer-модели для последовательностей, градиентный бустинг (CatBoost, LightGBM), временные ряды и прогнозирование, объяснимый ИИ (attention maps), валидация без утечек данных.</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title">Backend и MLOps</h3>
+            <p class="card__text">FastAPI-сервисы и REST API, Docker, Nginx, CI/CD, PostgreSQL, Redis, мониторинг на Prometheus, безопасность API (IDOR / BOLA).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 / Проекты</span>
+          <h2 class="section__title" id="projects-title">Избранные работы</h2>
+          <p class="section__lead">Две ключевые работы: от задачи и подхода до честных результатов и ограничений.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" aria-labelledby="p-idor">
+            <div class="project__head">
+              <h3 class="project__title" id="p-idor">NeuralIDOR-Det</h3>
+              <span class="project__kicker">Deep Learning · Security</span>
+            </div>
+            <p class="project__lead">Поиск аномального поведения пользователей и ботов в API-трафике, в первую очередь IDOR-подобных обращений к чужим ресурсам.</p>
+            <div class="cases">
+              <div class="case">
+                <span class="case__label">Подход</span>
+                <p>Transformer Encoder анализирует последовательности вызовов API, MLP обрабатывает метаданные (IP, <code>user_id</code>, число запросов). Признаки объединяются через late fusion.</p>
+                <p>Autoencoder ищет неизвестные типы атак без разметки.</p>
+              </div>
+              <div class="case">
+                <span class="case__label">Объяснимость</span>
+                <p>Attention maps показывают, какие вызовы API повлияли на решение модели, поэтому результат можно проверить глазами, а не принимать на веру.</p>
+              </div>
+            </div>
+            <ul class="metrics">
+              <li class="metric"><span class="metric__value">0.784</span><span class="metric__label">Accuracy</span></li>
+              <li class="metric"><span class="metric__value">0.870</span><span class="metric__label">F1</span></li>
+              <li class="metric"><span class="metric__value">0.666</span><span class="metric__label">ROC-AUC</span></li>
+            </ul>
+            <p class="note"><strong>Честно об ограничениях.</strong> CatBoost-baseline даёт ROC-AUC <code>0.893</code>, то есть гибридная модель пока не побеждает по этой метрике. Причины и план улучшений разобраны в README проекта.</p>
+            <ul class="tags">
+              <li class="tag">Python</li><li class="tag">Deep Learning</li><li class="tag">CatBoost</li><li class="tag">CUDA</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn" href="https://github.com/NuIIX/NeuralIDOR-Det" rel="noopener">Репозиторий →</a>
+            </div>
+          </article>
+
+          <article class="project reveal" aria-labelledby="p-garden">
+            <div class="project__head">
+              <h3 class="project__title" id="p-garden">Semantic Gardener</h3>
+              <span class="project__kicker">Obsidian plugin · NLP</span>
+            </div>
+            <p class="project__lead">Плагин для Obsidian: находит смысловые дубликаты заметок и аккуратно сводит их в атомарные концепты.</p>
+            <div class="cases">
+              <div class="case">
+                <span class="case__label">Подход</span>
+                <p>Локальные эмбеддинги (multilingual MiniLM, ONNX) считаются в Web Worker. Кластеризация идёт по косинусной близости, дубликат дополнительно проверяет Gemini (BYOK).</p>
+              </div>
+              <div class="case">
+                <span class="case__label">UX и приватность</span>
+                <p>Человек остаётся в контуре: пословный diff, принять / изменить / отклонить, откат последнего рефакторинга в один клик.</p>
+                <p>Текст хранилища не покидает машину на этапе сканирования.</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tag">TypeScript</li><li class="tag">Svelte 5</li><li class="tag">Transformers.js</li><li class="tag">ONNX</li><li class="tag">Gemini API</li><li class="tag">MIT</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn" href="https://github.com/NuIIX/obsidian-semantic-gardener" rel="noopener">Репозиторий →</a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="card__title reveal" style="margin: var(--space-7) 0 var(--space-4)">Другие публичные репозитории</h3>
+        <ul class="repo-list">
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/py-cointracker" rel="noopener">py-cointracker</a>
+            <span class="repo__desc">CLI-трекер криптовалют: сбор данных с coinmarketcap.com, хранение, экспорт в CSV / JSON / XML.</span>
+            <span class="tag">Python</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/Yeahub-Obsidian-Parser" rel="noopener">Yeahub-Obsidian-Parser</a>
+            <span class="repo__desc">Разбор вопросов и подборок из Yeahub API и форматирование их для Obsidian.md.</span>
+            <span class="tag">Python</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/lithology-classifier" rel="noopener">lithology-classifier</a>
+            <span class="repo__desc">Классификация литологических типов горных пород по набору кривых каротажа.</span>
+            <span class="tag">Jupyter</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/RedisTutorialProject" rel="noopener">RedisTutorialProject</a>
+            <span class="repo__desc">Redis как кэш в ASP.NET Core MVC, примеры работы с БД и RESTful-сервисами.</span>
+            <span class="tag">C#</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/SimpleExampleAuth" rel="noopener">SimpleExampleAuth</a>
+            <span class="repo__desc">Минимальный пример системы аутентификации и авторизации.</span>
+            <span class="tag">C#</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/ASCII_Art_Generator" rel="noopener">ASCII_Art_Generator</a>
+            <span class="repo__desc">Преобразование изображения в ASCII-арт.</span>
+            <span class="tag">C#</span>
+          </li>
+        </ul>
+        <p class="card__text reveal" style="margin-top: var(--space-4)">Часть проектов приватна: ML-прогнозирование, FastAPI-сервисы, Flutter-приложения. Детали по запросу.</p>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section--alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 / Хронология</span>
+          <h2 class="section__title" id="journey-title">От веб-сервисов до трансформеров</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__title">C# и ASP.NET MVC</h3>
+            <p class="timeline__text">Redis-кэширование, авторизация, консольные утилиты.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__title">Python и инженерия данных</h3>
+            <p class="timeline__text">Парсеры, трекинг криптоактивов, работа с API.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2026</span>
+            <h3 class="timeline__title">ML и Deep Learning</h3>
+            <p class="timeline__text">Samsung Innovation Campus, детекция аномалий в API-трафике, Flutter и плагин для Obsidian.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">04 / Стек</span>
+          <h2 class="section__title" id="stack-title">Технологии</h2>
+        </div>
+        <div class="stack">
+          <div class="stack__group reveal">
+            <h3 class="stack__title">Языки</h3>
+            <ul class="tags"><li class="tag tag--accent">Python</li><li class="tag">TypeScript</li><li class="tag">JavaScript</li><li class="tag">C#</li><li class="tag">C++</li><li class="tag">Bash</li><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">ML / Data Science</h3>
+            <ul class="tags"><li class="tag tag--accent">PyTorch</li><li class="tag">TensorFlow</li><li class="tag">scikit-learn</li><li class="tag">CatBoost</li><li class="tag">LightGBM</li><li class="tag">Pandas</li><li class="tag">NumPy</li><li class="tag">Jupyter</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">Backend и Web</h3>
+            <ul class="tags"><li class="tag tag--accent">FastAPI</li><li class="tag">.NET</li><li class="tag">Node.js</li><li class="tag">Nginx</li><li class="tag">Svelte</li><li class="tag">Vite</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">Базы данных и потоки</h3>
+            <ul class="tags"><li class="tag tag--accent">PostgreSQL</li><li class="tag">Redis</li><li class="tag">MongoDB</li><li class="tag">SQLite</li><li class="tag">Supabase</li><li class="tag">Kafka</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">DevOps</h3>
+            <ul class="tags"><li class="tag tag--accent">Docker</li><li class="tag">Kubernetes</li><li class="tag">Git</li><li class="tag">GitHub Actions</li><li class="tag">GitLab</li><li class="tag">Jenkins</li><li class="tag">Prometheus</li><li class="tag">Linux</li><li class="tag">CMake</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">Инструменты</h3>
+            <ul class="tags"><li class="tag">VS Code</li><li class="tag">Obsidian</li><li class="tag">Figma</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="eyebrow">05 / Контакты</span>
+          <h2 class="contact__title" id="contact-title">Давайте поговорим</h2>
+          <p class="contact__text">Ищу стажировку или junior-позицию в ML / AI. Быстрее всего ответ приходит в Telegram. Если хочется посмотреть код, всё лежит на GitHub.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://t.me/NUIIXXX" rel="me noopener">Написать в Telegram</a>
+            <a class="btn" href="https://github.com/NuIIX" rel="me noopener">Профиль на GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 NuIIX · Новосибирск</span>
+      <span><a href="https://github.com/NuIIX/NuIIX.github.io" rel="noopener">Исходный код сайта</a> · размещено на GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
