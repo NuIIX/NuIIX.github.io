@@ -1,0 +1,22 @@
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  site-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify links, anchors, SEO tags and sitemap
+        run: node scripts/check-site.mjs
+      - name: Validate HTML
+        run: npx --yes html-validate@10 index.html en/index.html 404.html
