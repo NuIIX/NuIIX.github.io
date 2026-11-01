@@ -4,12 +4,21 @@
     <loc>https://nuiix.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://nuiix.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nuiix.github.io/en/"/>
-    <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://nuiix.github.io/zh/"/>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://nuiix.github.io/en/</loc>
     <xhtml:link rel="alternate" hreflang="ru" href="https://nuiix.github.io/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nuiix.github.io/en/"/>
-    <lastmod>2026-10-31</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://nuiix.github.io/zh/"/>
+    <lastmod>2026-11-01</lastmod>
+  </url>
+  <url>
+    <loc>https://nuiix.github.io/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nuiix.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuiix.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://nuiix.github.io/zh/"/>
+    <lastmod>2026-11-01</lastmod>
   </url>
 </urlset>

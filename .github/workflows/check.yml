@@ -19,4 +19,4 @@ jobs:
       - name: Verify links, anchors, SEO tags and sitemap
         run: node scripts/check-site.mjs
       - name: Validate HTML
-        run: npx --yes html-validate@10 index.html en/index.html 404.html
+        run: npx --yes html-validate@10 index.html en/index.html zh/index.html 404.html
