@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NuIIX — 机器学习工程师 / AI 开发者 | 马克西姆，新西伯利亚</title>
+  <meta name="description" content="NuIIX（马克西姆）的个人主页与技术作品集：专注于机器学习算法（Transformer、CatBoost）、API 流量异常行为检测与 Obsidian 插件研发。正在寻求实习或初级岗位。">
+  <meta name="author" content="NuIIX">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://nuiix.github.io/zh/">
+  <link rel="alternate" hreflang="ru" href="https://nuiix.github.io/">
+  <link rel="alternate" hreflang="en" href="https://nuiix.github.io/en/">
+  <link rel="alternate" hreflang="zh" href="https://nuiix.github.io/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://nuiix.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NuIIX">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="NuIIX — 机器学习工程师 / AI 开发者">
+  <meta property="og:description" content="Transformer 序列模型、API 流量异常检测、基于 FastAPI 的企业级 AI 生产服务。正在寻求实习与初级工程师岗位。">
+  <meta property="og:url" content="https://nuiix.github.io/zh/">
+  <meta property="og:image" content="https://nuiix.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="NuIIX — 机器学习工程师、AI 开发者、Python">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NuIIX — 机器学习工程师 / AI 开发者">
+  <meta name="twitter:description" content="Transformer 序列模型、API 流量异常检测、基于 FastAPI 的企业级 AI 生产服务。">
+  <meta name="twitter:image" content="https://nuiix.github.io/assets/og.png">
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var theme = "dark";
+      try {
+        theme = localStorage.getItem("nuiix-theme") ||
+          (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      } catch (error) {
+        console.warn("Theme preference unavailable, using dark:", error);
+      }
+      root.dataset.theme = theme;
+      root.classList.add("js");
+    })();
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maxim",
+    "alternateName": "NuIIX",
+    "url": "https://nuiix.github.io/zh/",
+    "image": "https://nuiix.github.io/assets/og.png",
+    "jobTitle": "机器学习工程师 / AI 开发者",
+    "description": "西伯利亚国立电信与信息大学大四学生，专注于机器学习与 Python 工程落地。",
+    "address": { "@type": "PostalAddress", "addressLocality": "新西伯利亚", "addressCountry": "RU" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "西伯利亚国立电信与信息大学 (SibSUTIS)" },
+    "knowsAbout": ["Machine Learning", "Deep Learning", "Python", "Transformers", "FastAPI", "Anomaly Detection"],
+    "sameAs": ["https://github.com/NuIIX", "https://t.me/NUIIXXX"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="/zh/" aria-label="NuIIX — 首页"><span class="brand__dot" aria-hidden="true"></span>NuIIX</a>
+
+      <nav class="nav" id="site-nav" data-nav aria-label="主导航栏">
+        <a class="nav__link" href="#about">关于我</a>
+        <a class="nav__link" href="#projects">项目</a>
+        <a class="nav__link" href="#journey">历程</a>
+        <a class="nav__link" href="#stack">技术栈</a>
+        <a class="nav__link" href="#contact">联系我</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-group" role="group" aria-label="语言切换">
+          <a class="lang-link" href="/" hreflang="ru" lang="ru" aria-label="切换到俄语">RU</a>
+          <a class="lang-link" href="/en/" hreflang="en" lang="en" aria-label="Switch to English">EN</a>
+        </div>
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="展开导航菜单">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <p class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span>正在寻求 实习 / 初级（Junior）岗位</p>
+        <h1 class="hero__title" id="hero-title">你好，我是 <span class="gradient">NuIIX</span></h1>
+        <p class="hero__role">机器学习工程师 · AI 开发者 · 数据科学家<span class="cursor" aria-hidden="true"></span></p>
+        <p class="hero__lead">
+          我叫<strong>马克西姆（Maxim）</strong>，西伯利亚国立电信与信息大学（SibSUTIS）计算机科学专业大四学生。专注于 Python 机器学习领域：从数据清洗处理与模型训练评估，到封装为高效实用的生产服务。
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#projects">查看精选项目</a>
+          <a class="btn" href="https://github.com/NuIIX" rel="me noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn" href="https://t.me/NUIIXXX" rel="me noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 3.6 2.7 11c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8l3.2-15.1c.3-1.3-.5-1.9-1.3-1.5zM8.5 13.5l9.9-6.2c.5-.3.9-.1.5.2l-8.1 7.3-.3 3.4z"/></svg>
+            Telegram
+          </a>
+        </div>
+        <ul class="facts">
+          <li class="facts__item"><span class="facts__label">教育背景</span><span class="facts__value">西伯利亚国立电信与信息大学 · 2027 届</span></li>
+          <li class="facts__item"><span class="facts__label">专业认证</span><span class="facts__value">Samsung Innovation Campus 优秀学员</span></li>
+          <li class="facts__item"><span class="facts__label">地理位置</span><span class="facts__value">俄罗斯 · 新西伯利亚 · UTC+7</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 / 关于我</span>
+          <h2 class="section__title" id="about-title">从原始数据到落地服务</h2>
+          <p class="section__lead">训练模型只是第一步。我更注重将算法转化为可在实际业务中稳定运行的高效服务。</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>我专注于<strong>机器学习与 Python 全栈工程</strong>：构建与清洗数据集，严谨执行无数据泄露的模型训练与交叉验证，并通过 FastAPI 封装为生产就绪的微服务。</p>
+            <p>目前正在寻找 <strong>机器学习工程师（ML Engineer）、AI 开发者（AI Developer）或数据科学家（Data Scientist）方向的实习与初级（Junior）岗位</strong>。同时在推进毕业设计，并开发基于 Flutter 的跨平台移动端应用。</p>
+            <div>
+              <ul class="tags">
+                <li class="tag tag--accent">Transformer 序列模型</li>
+                <li class="tag tag--accent">梯度提升树</li>
+                <li class="tag tag--accent">时间序列分析</li>
+                <li class="tag tag--accent">可解释性 AI (XAI)</li>
+                <li class="tag">FastAPI 微服务</li>
+                <li class="tag">Docker 容器与 CI/CD</li>
+                <li class="tag">API 安全防御</li>
+              </ul>
+            </div>
+          </div>
+          <dl class="dl reveal">
+            <div class="dl__row"><dt>学历专业</dt><dd>西伯利亚国立电信与信息大学 · 09.03.01 计算机科学与工程 · 2027 届</dd></div>
+            <div class="dl__row"><dt>专业认证</dt><dd>Samsung Innovation Campus — 人工智能与机器学习（2026 年优秀结业）</dd></div>
+            <div class="dl__row"><dt>当前焦点</dt><dd>机器学习实战项目、毕业论文研究、Flutter 移动端应用开发</dd></div>
+            <div class="dl__row"><dt>进阶方向</dt><dd>深度学习前沿、高性能后端架构、Kubernetes 容器编排</dd></div>
+            <div class="dl__row"><dt>所在城市</dt><dd>俄罗斯 · 新西伯利亚 · UTC+7</dd></div>
+          </dl>
+        </div>
+
+        <div class="grid grid--2" style="margin-top: var(--space-6)">
+          <article class="card reveal">
+            <h3 class="card__title">机器学习 (Machine Learning)</h3>
+            <p class="card__text">序列 Transformer 建模、梯度提升（CatBoost、LightGBM）、时间序列建模与预测、可解释性 AI（Attention Maps 注意力热力图）、无泄露严格验证流程。</p>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title">后端架构与 MLOps (Backend &amp; MLOps)</h3>
+            <p class="card__text">FastAPI 与 REST API 设计、Docker 容器化、Nginx、CI/CD 自动化流水线、PostgreSQL、Redis 高速缓存、Prometheus 监控、API 安全防护（IDOR / BOLA 漏洞）。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 / 精选项目</span>
+          <h2 class="section__title" id="projects-title">代表作品</h2>
+          <p class="section__lead">深度剖析两个重点项目：从实际问题、架构设计，到客观评测指标与局限性思考。</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" aria-labelledby="p-idor">
+            <div class="project__head">
+              <h3 class="project__title" id="p-idor">NeuralIDOR-Det</h3>
+              <span class="project__kicker">深度学习 · API 安全</span>
+            </div>
+            <p class="project__lead">面向 API 流量的用户与自动化脚本异常行为检测，重点防范越权访问（IDOR）等针对非授权资源的请求。</p>
+            <div class="cases">
+              <div class="case">
+                <span class="case__label">技术架构</span>
+                <p>采用 Transformer Encoder 提取 API 调用序列的时序语义，结合多层感知机（MLP）处理网络元数据（IP、<code>user_id</code>、请求频次），通过后期融合（Late Fusion）实现多模态联合决策。</p>
+                <p>引入自编码器（Autoencoder）在无标注场景下发现未知的潜在攻击模式。</p>
+              </div>
+              <div class="case">
+                <span class="case__label">模型可解释性</span>
+                <p>利用注意力热力图（Attention Maps）可视化关键 API 调用对判定结果的贡献度，使模型决策具备清晰可溯源的审计解释性，拒绝“黑盒推断”。</p>
+              </div>
+            </div>
+            <ul class="metrics">
+              <li class="metric"><span class="metric__value">0.784</span><span class="metric__label">准确率 (Accuracy)</span></li>
+              <li class="metric"><span class="metric__value">0.870</span><span class="metric__label">F1 分数 (F1-Score)</span></li>
+              <li class="metric"><span class="metric__value">0.666</span><span class="metric__label">ROC-AUC</span></li>
+            </ul>
+            <p class="note"><strong>客观评估与局限性说明：</strong> 目前基线模型 CatBoost 的 ROC-AUC 达到 <code>0.893</code>，当前的混合深度模型在全局 AUC 指标上尚未超越纯树模型。具体归因分析与后续改进方案已在项目 README 中详尽论述。</p>
+            <ul class="tags">
+              <li class="tag">Python</li><li class="tag">Deep Learning</li><li class="tag">CatBoost</li><li class="tag">CUDA</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn" href="https://github.com/NuIIX/NeuralIDOR-Det" rel="noopener">查看代码仓库 →</a>
+            </div>
+          </article>
+
+          <article class="project reveal" aria-labelledby="p-garden">
+            <div class="project__head">
+              <h3 class="project__title" id="p-garden">Semantic Gardener</h3>
+              <span class="project__kicker">Obsidian 插件 · 自然语言处理</span>
+            </div>
+            <p class="project__lead">专为知识管理软件 Obsidian 打造的智能重构助手：自动发掘库中语义相近的重复笔记，并辅助沉淀为高内聚的原子知识点。</p>
+            <div class="cases">
+              <div class="case">
+                <span class="case__label">技术架构</span>
+                <p>在 Web Worker 后台运行轻量级多语言嵌入模型（Multilingual MiniLM, ONNX 格式），基于余弦相似度进行聚类分析，并结合 Google Gemini Flash（BYOK 自带 Key）进行语义合成与精炼校验。</p>
+              </div>
+              <div class="case">
+                <span class="case__label">人机交互与隐私保护</span>
+                <p>坚持“人机协作（Human-in-the-loop）”设计哲学：提供单词级差异比对（Diff），支持采纳、编辑或驳回，并可一键撤销重构。</p>
+                <p>扫描检索全流程在本地执行，笔记文本绝不外泄。</p>
+              </div>
+            </div>
+            <ul class="tags">
+              <li class="tag">TypeScript</li><li class="tag">Svelte 5</li><li class="tag">Transformers.js</li><li class="tag">ONNX</li><li class="tag">Gemini API</li><li class="tag">MIT</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn" href="https://github.com/NuIIX/obsidian-semantic-gardener" rel="noopener">查看代码仓库 →</a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="card__title reveal" style="margin: var(--space-7) 0 var(--space-4)">其他公开代码仓库</h3>
+        <ul class="repo-list">
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/py-cointracker" rel="noopener">py-cointracker</a>
+            <span class="repo__desc">CLI 加密货币行情追踪器：定时抓取 coinmarketcap.com 数据，本地持久化并支持导出为 CSV / JSON / XML。</span>
+            <span class="tag">Python</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/Yeahub-Obsidian-Parser" rel="noopener">Yeahub-Obsidian-Parser</a>
+            <span class="repo__desc">自动化解析 Yeahub 面试题库与合集接口，并批量转换为规范的 Obsidian Markdown 笔记格式。</span>
+            <span class="tag">Python</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/lithology-classifier" rel="noopener">lithology-classifier</a>
+            <span class="repo__desc">基于测井曲线数据的岩石岩性自动分类算法研究与实现。</span>
+            <span class="tag">Jupyter</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/RedisTutorialProject" rel="noopener">RedisTutorialProject</a>
+            <span class="repo__desc">展示 ASP.NET Core MVC 项目中 Redis 缓存实践、数据库集成及 RESTful 服务交互模式。</span>
+            <span class="tag">C#</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/SimpleExampleAuth" rel="noopener">SimpleExampleAuth</a>
+            <span class="repo__desc">轻量现代的身份鉴权与基于角色的访问控制（RBAC）架构参考范例。</span>
+            <span class="tag">C#</span>
+          </li>
+          <li class="repo reveal">
+            <a class="repo__name" href="https://github.com/NuIIX/ASCII_Art_Generator" rel="noopener">ASCII_Art_Generator</a>
+            <span class="repo__desc">基于 C# 的高保真图像至 ASCII 字符艺术画生成转换工具。</span>
+            <span class="tag">C#</span>
+          </li>
+        </ul>
+        <p class="card__text reveal" style="margin-top: var(--space-4)">部分项目因商业或保密协议暂未公开（涵盖时间序列量化预测、高并发 FastAPI 微服务及 Flutter 跨平台项目），可依要求提供脱敏演示。</p>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="section section--alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 / 成长历程</span>
+          <h2 class="section__title" id="journey-title">从 Web 服务到深度学习模型</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2024</span>
+            <h3 class="timeline__title">C# 与 ASP.NET MVC</h3>
+            <p class="timeline__text">深入实践 Redis 高速缓存、认证鉴权架构与高效命令行工具研发。</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2025</span>
+            <h3 class="timeline__title">Python 与数据工程</h3>
+            <p class="timeline__text">网络爬虫、加密货币资产流数据追踪及多平台开放 API 深度集成。</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__year">2026</span>
+            <h3 class="timeline__title">机器学习与深度学习</h3>
+            <p class="timeline__text">三星创新校园（Samsung Innovation Campus）优秀结业、API 流量异常行为检测算法研发、Flutter 移动端及 Obsidian 插件工程实践。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">04 / 技术栈</span>
+          <h2 class="section__title" id="stack-title">掌握技术</h2>
+        </div>
+        <div class="stack">
+          <div class="stack__group reveal">
+            <h3 class="stack__title">编程语言</h3>
+            <ul class="tags"><li class="tag tag--accent">Python</li><li class="tag">TypeScript</li><li class="tag">JavaScript</li><li class="tag">C#</li><li class="tag">C++</li><li class="tag">Bash</li><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">机器学习 / 数据科学</h3>
+            <ul class="tags"><li class="tag tag--accent">PyTorch</li><li class="tag">TensorFlow</li><li class="tag">scikit-learn</li><li class="tag">CatBoost</li><li class="tag">LightGBM</li><li class="tag">Pandas</li><li class="tag">NumPy</li><li class="tag">Jupyter</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">后端与 Web 开发</h3>
+            <ul class="tags"><li class="tag tag--accent">FastAPI</li><li class="tag">.NET</li><li class="tag">Node.js</li><li class="tag">Nginx</li><li class="tag">Svelte</li><li class="tag">Vite</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">数据库与数据流</h3>
+            <ul class="tags"><li class="tag tag--accent">PostgreSQL</li><li class="tag">Redis</li><li class="tag">MongoDB</li><li class="tag">SQLite</li><li class="tag">Supabase</li><li class="tag">Kafka</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">运维工程化 (DevOps)</h3>
+            <ul class="tags"><li class="tag tag--accent">Docker</li><li class="tag">Kubernetes</li><li class="tag">Git</li><li class="tag">GitHub Actions</li><li class="tag">GitLab</li><li class="tag">Jenkins</li><li class="tag">Prometheus</li><li class="tag">Linux</li><li class="tag">CMake</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3 class="stack__title">效率工具</h3>
+            <ul class="tags"><li class="tag">VS Code</li><li class="tag">Obsidian</li><li class="tag">Figma</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="eyebrow">05 / 联系方式</span>
+          <h2 class="contact__title" id="contact-title">欢迎交流</h2>
+          <p class="contact__text">目前正在寻找机器学习 / 人工智能方向的实习或初级工程师机会。Telegram 回复最为迅速，如需审查源码与工程规范，欢迎随时浏览我的 GitHub 代码主页。</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="https://t.me/NUIIXXX" rel="me noopener">通过 Telegram 联系</a>
+            <a class="btn" href="https://github.com/NuIIX" rel="me noopener">访问 GitHub 主页</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 NuIIX · 俄罗斯新西伯利亚</span>
+      <span><a href="https://github.com/NuIIX/NuIIX.github.io" rel="noopener">站点源码</a> · 基于 GitHub Pages 部署</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

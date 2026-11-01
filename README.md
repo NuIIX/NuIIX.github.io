@@ -11,6 +11,7 @@ Hosted for free on GitHub Pages.
 |---|---|
 | `index.html` | Russian version (`/`) |
 | `en/index.html` | English version (`/en/`) |
+| `zh/index.html` | Simplified Chinese version (`/zh/`) |
 | `404.html` | Not-found page served by GitHub Pages |
 | `assets/css/style.css` | Design tokens, dark/light themes, components |
 | `assets/js/main.js` | Theme toggle, mobile menu, scroll reveal (progressive enhancement) |

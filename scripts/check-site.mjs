@@ -66,7 +66,7 @@ for (const file of collectHtml(ROOT)) {
     [/<meta name="description" content="[^"]{50,}"/, "meta description (>=50 chars)"],
     [/<link rel="canonical" href="https:\/\/nuiix\.github\.io\/[^"]*"/, "canonical link"],
     [/<meta property="og:image" content="https:\/\/nuiix\.github\.io\/[^"]+"/, "og:image"],
-    [/<html lang="[a-z]{2}"/, "html lang"],
+    [/<html lang="[a-z]{2}(-[A-Za-z0-9]+)?"/i, "html lang"],
     [/<h1[\s>]/, "h1"],
   ];
   for (const [pattern, label] of required) {
