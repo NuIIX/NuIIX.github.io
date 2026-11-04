@@ -39,6 +39,6 @@ chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 \
 Settings → Pages → **Deploy from a branch** → `main` / `/ (root)`.
 The repository must be public and named exactly `NuIIX.github.io`.
 
-## License
+## License 
 
 MIT, see [LICENSE](LICENSE).
